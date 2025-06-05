@@ -16,7 +16,7 @@ It lets you add, complete ✅, and delete 🗑️ tasks effortlessly.
 
 ## 🚀 Live Preview
 
-## [🌐Task Manager - Go live](https://task-manager-kuraz-exam.vercel.app/)
+- [🌐Task Manager](https://task-manager-kuraz-exam.vercel.app/)
 
 ## 💻 Technologies Used
 
