@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --border: #3d444d;
+  --accent: #151b23;
+  --text: #ffffff;
+  --btn-gray: #393e43;
+  --btn-green: #009514;
+  --background: #000000;
+  --warning: #cb0505;
+}
+
+body {
+  font-family: "outfit", sans-serif;
+  background-color: var(--background);
+  color: var(--text);
+}
+
+.header {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.main {
+  max-width: 450px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.taskViewer {
+  background: var(--accent);
+  padding: 1rem 1.5rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  margin-bottom: 2rem;
+}
+
+.taskViewer-title {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.task {
+  padding: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.task:last-child {
+  border-bottom: none;
+}
+
+.task-title {
+  flex: 0 0 200px;
+  font-weight: 600;
+  flex-wrap: wrap;
+}
+
+.done .task-title {
+  text-decoration: line-through;
+  color: var(--text);
+  opacity: 0.3;
+}
+
+.btn {
+  aspect-ratio: 1/1;
+  height: 30px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  background-color: var(--btn-gray);
+}
+
+.bx-check {
+  font-size: 20px;
+  color: var(--btn-green);
+}
+
+.bx-trash {
+  font-size: 17px;
+  color: var(--warning);
+}
+
+.btn-add {
+  display: block;
+  padding: 10px 0px;
+  background-color: var(--btn-green);
+  border-radius: 6px;
+  border: none;
+  color: var(--text);
+  width: 100%;
+  font-family: inherit;
+  font-weight: 500;
+}
+
+.input {
+  padding: 8px 12px;
+  font-size: 0.8rem;
+  font-family: inherit;
+  border: 1px solid var(--border);
+  background-color: var(--background);
+  color: var(--text);
+  border-radius: 6px;
+  width: 100%;
+}
+
+.addTaskForm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+  padding: 1rem;
+  max-width: 350px;
+  margin: 0 auto;
+}
