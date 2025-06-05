@@ -1,12 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-}
 
 :root {
   --border: #3d444d;
@@ -18,8 +10,17 @@
   --warning: #cb0505;
 }
 
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
 body {
-  font-family: "outfit", sans-serif;
+  font-family: "Outfit", sans-serif;
   background-color: var(--background);
   color: var(--text);
 }
@@ -42,8 +43,7 @@ body {
   flex-direction: column;
   gap: 10px;
   background: var(--accent);
-  padding-block: 1.5rem 1rem;
-  padding-inline: 0.25rem 1rem;
+  padding: 1.5rem 1rem 1rem 0.25rem;
   border: 1px solid var(--border);
   border-radius: 6px;
   margin-bottom: 2rem;
@@ -68,7 +68,6 @@ body {
 
 .done .task-title {
   text-decoration: line-through;
-  color: var(--text);
   opacity: 0.3;
 }
 
@@ -97,7 +96,7 @@ body {
 
 .btn-add {
   display: block;
-  padding: 10px 0px;
+  padding: 10px 0;
   background-color: var(--btn-green);
   border-radius: 6px;
   border: none;
@@ -110,23 +109,23 @@ body {
 .input {
   padding: 8px 12px;
   font-size: 0.8rem;
-  font-family: inherit;
   border: 1px solid var(--border);
   background-color: var(--background);
   color: var(--text);
   border-radius: 6px;
   width: 100%;
+  font-family: inherit;
 }
 
 .addTaskForm {
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
   gap: 15px;
   padding: 1rem;
   max-width: 350px;
   margin: 0 auto;
+  align-items: center;
+  justify-content: center;
 }
 
 footer {
@@ -135,6 +134,7 @@ footer {
   position: absolute;
   bottom: 2rem;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
   opacity: 0.7;
+  color: var(--text);
 }
