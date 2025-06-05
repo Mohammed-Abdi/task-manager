@@ -6,7 +6,14 @@ export default function App() {
 }
 
 function Dashboard() {
-  const [tasks, setTasks] = useState([]);
+  const [tasks, setTasks] = useState([
+    {
+      id: 1,
+      title: "Task Example",
+      isDone: false,
+    },
+  ]);
+
   const [title, setTitle] = useState("");
 
   const addTask = () => {
@@ -40,7 +47,9 @@ function Dashboard() {
           <span className="taskViewer-title">tasks</span>
           {tasks.map((task) => (
             <div key={task.id} className={`task ${task.isDone ? "done" : ""}`}>
-              <span className="task-title">{task.title}</span>
+              <span>
+                ⚡<span className="task-title">{task.title}</span>
+              </span>
               <div className="buttons">
                 {!task.isDone && (
                   <button className="btn" onClick={() => markAsDone(task.id)}>
@@ -68,7 +77,7 @@ function Dashboard() {
           </button>
         </section>
       </main>
-      <footer className="footer"></footer>
+      <footer className="footer">&copy; 2025 | MOHAMMED ABDI</footer>
     </>
   );
 }
