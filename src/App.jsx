@@ -37,21 +37,20 @@ function Dashboard() {
       <header className="header">Task Manager</header>
       <main className="main">
         <section className="taskViewer">
-          <h3 className="taskViewer-title">Tasks</h3>
+          <span className="taskViewer-title">tasks</span>
           {tasks.map((task) => (
             <div key={task.id} className={`task ${task.isDone ? "done" : ""}`}>
-              <strong className="task-title">
-                {task.id}. {task.title}:
-              </strong>{" "}
-              <span className="task-body">{task.body}</span>{" "}
-              {!task.isDone && (
-                <button className="btn" onClick={() => markAsDone(task.id)}>
-                  <i className="bx bx-check"></i>
+              <span className="task-title">{task.title}</span>
+              <div className="buttons">
+                {!task.isDone && (
+                  <button className="btn" onClick={() => markAsDone(task.id)}>
+                    <i className="bx bx-check"></i>
+                  </button>
+                )}
+                <button className="btn" onClick={() => deleteTask(task.id)}>
+                  <i className="bx bx-trash"></i>
                 </button>
-              )}{" "}
-              <button className="btn" onClick={() => deleteTask(task.id)}>
-                <i className="bx bx-trash"></i>
-              </button>
+              </div>
             </div>
           ))}
         </section>
