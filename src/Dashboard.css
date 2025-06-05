@@ -38,8 +38,11 @@ body {
 }
 
 .taskViewer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   background: var(--accent);
-  padding: 1rem 1.5rem;
+  padding: 1.5rem 1rem;
   border: 1px solid var(--border);
   border-radius: 6px;
   margin-bottom: 2rem;
@@ -49,14 +52,13 @@ body {
 
 .taskViewer-title {
   position: absolute;
-  transform: translateY(-10px);
+  transform: translateY(-20px);
   font-size: 0.75rem;
   opacity: 0.7;
   font-weight: 300;
 }
 
 .task {
-  padding: 0.75rem 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -76,7 +78,7 @@ body {
 
 .btn {
   aspect-ratio: 1/1;
-  height: 30px;
+  height: 24px;
   border-radius: 4px;
   cursor: pointer;
   border: none;
@@ -89,7 +91,6 @@ body {
 }
 
 .bx-trash {
-  font-size: 17px;
   color: var(--warning);
 }
 
