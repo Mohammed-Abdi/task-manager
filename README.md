@@ -32,6 +32,6 @@ It lets you add, complete ✅, and delete 🗑️ tasks effortlessly.
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/task-manager-app.git
-cd task-manager-app
+git clone https://github.com/your-username/task-manager.git
+cd task-manager
 ```
