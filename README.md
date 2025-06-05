@@ -7,7 +7,8 @@ It lets you add, complete ✅, and delete 🗑️ tasks effortlessly.
 
 ## 🔧 Features
 
-- 📌 Add new tasks with a title and description
+- 🖥️ View Tasks
+- 📌 Add new tasks
 - ✅ Mark tasks as completed
 - 🗑️ Delete tasks
 - 🎨 Styled with custom dark theme and Boxicons
