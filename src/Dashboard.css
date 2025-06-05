@@ -77,12 +77,21 @@ body {
 }
 
 .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   aspect-ratio: 1/1;
   height: 24px;
   border-radius: 4px;
   cursor: pointer;
   border: none;
+  font-family: inherit;
   background-color: var(--btn-gray);
+  transition: opacity 0.3s ease-in-out;
+}
+
+.btn:hover {
+  opacity: 0.7;
 }
 
 .bx-check {
@@ -95,20 +104,18 @@ body {
 }
 
 .btn-add {
-  display: block;
-  padding: 10px 0;
+  padding-block: 16px;
   background-color: var(--btn-green);
   border-radius: 6px;
   border: none;
   color: var(--text);
   width: 100%;
-  font-family: inherit;
   font-weight: 500;
 }
 
 .input {
   padding: 8px 12px;
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   border: 1px solid var(--border);
   background-color: var(--background);
   color: var(--text);

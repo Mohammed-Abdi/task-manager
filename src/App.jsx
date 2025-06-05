@@ -72,7 +72,7 @@ function Dashboard() {
             className="input"
             onChange={(e) => setTitle(e.target.value)}
           />
-          <button className="btn-add" onClick={addTask}>
+          <button className="btn btn-add" onClick={addTask}>
             Add Task
           </button>
         </section>
